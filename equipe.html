@@ -1,0 +1,184 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<script src="js/config.js" type="text/javascript"></script>
+<title></title>
+<script>document.title = title</script>
+<link href="js/jquery.mobile-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/jqm-icon-pack-2.0-original.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script>
+$( document ).bind( "mobileinit", function() {
+    $.mobile.allowCrossDomainPages = true;
+	$.support.cors = true;
+});
+$(document).ready(function(){
+    // make sure we only add the point the back buttons
+  /*  var backButton = $('a[data-theme="app-ios"]').filter('[data-rel="back"]');
+    backButton.find('.ui-icon').remove();
+    backButton.append('<div class="ios-tip"><span>&nbsp;</span></div>');*/
+});
+</script>
+<style>
+h2, h1{
+    text-transform:uppercase;
+}
+</style>
+</head>
+<body>
+    <div data-role="page" id="page">
+    	<div data-role="header" data-id="head1" data-position="fixed" data-theme="c">
+           <h3>L'équipe</h3>
+           <a href="#" data-role="button" data-transition="fade" data-rel="back" data-icon="arrow-l" data-theme="b" >Accueil</a>
+        </div>
+            <div data-role="content">
+                    <!-- <h1 style="color:#24378d">Fédération du Bâtiment et des Travaux Publics de Drôme et Ardèche</h1> -->
+                    <div style="width:300px; margin:0 auto">
+                        <img src="images/logo.jpg"/>
+                       <!--  <br><p style="text-align:center">La passion de construire à votre service</p><br><br> -->
+                    </div>
+                    
+                    <img src="images/bat1.jpg" width="100%"><br>
+                    <p style="text-align:center; color:#24378d">
+                        <strong>Siège de la Fédération <script>document.write(credit)</script> :</strong><br>
+                        57 avenue de Lautagne<br>BP 117<br>26904 Valence cedex 9<br>
+                        <script>
+                        var superadresse = "57 avenue de Lautagne 26904 Valence";
+                        window.localStorage.setItem("url", superadresse);
+                        </script>
+                    </p><br>
+                    <a href="map.html" data-role="button" rel="external">Localiser</a></li>
+                    <a href="tel:0475759191" data-role="button" rel="external" target="_blank" data-icon="phone">Tél. : 04 75 75 91 91</a>
+                   
+                    <a href="mailto:contact@btp0726.fr" data-role="button" rel="external" data-icon="email">E-mail : contact@btp0726.fr</a>
+                    <a href="#" onclick="window.open('http://www.btp0726.fr', '_system', 'location=yes');" data-role="button" rel="external" data-icon="link" target="_blank">Site internet : www.btp0726.fr</a><br>
+                    
+                    Nos services peuvent être joints du lundi au vendredi :<br>
+                    de 8 H à 12 H et de 14 H à 18 H (17 H le vendredi) <br>
+
+                    
+                    <br>
+                    <strong>Une équipe à votre Service :</strong>
+                    <HR>
+                    <h1 style="color:#24378d">DIRECTION</h1>
+                    <HR>    
+                    <h2>SECRETAIRE GENERAL</h2>
+                    <img src="images/equipe/photo1.JPG" class="image-equipe"/><br>
+                    <strong>Stéphane CELLIER</strong><br>
+                    
+                    <!-- <a href="tel:0476866380" data-role="button" rel="external" target="_blank">Tel : 04 76 86 63 80</a> -->
+                    <a href="tel:0475759191" data-role="button" rel="external" target="_blank" data-icon="phone">Téléphone</a>
+                    <a href="mailto:stephane.cellier@btp0726.fr " data-role="button" rel="external" data-icon="email">E-mail : stephane.cellier@btp0726.fr</a>
+
+                    <h2>Assistante de Direction Communication <br> site Internet</h2>
+                    <img src="images/equipe/DSC00077.JPG" class="image-equipe"/><br>
+                    <strong>Edwige SAURET</strong>
+                    <a href="tel:0475759191" data-role="button" rel="external" target="_blank" data-icon="phone">Téléphone</a>
+                    <a href="mailto:contact@btp0726.fr" data-role="button" rel="external" data-icon="email">E-mail : contact@btp0726.fr</a>
+
+                    <h2>Comptabilité finances</h2>
+                    <img src="images/equipe/PV.JPG" class="image-equipe"/><br>
+                    <strong>Patricia VEZIRIAN</strong>
+                    <a href="tel:0475759191" data-role="button" rel="external" target="_blank" data-icon="phone">Téléphone</a>
+                    <a href="mailto:patricia.vezirian@btp0726.fr" data-role="button" rel="external" data-icon="email">E-mail : patricia.vezirian@btp0726.fr</a>
+
+                    <br><HR>
+                    <h1 style="color:#24378d">Social, Hygiène et Sécurité Prévention</h1>
+                    <HR>
+
+                    <h2>Responsable juridique</h2>
+                    <img src="images/equipe/Frederic-BRUYELLE.jpg" class="image-equipe"/><br>
+                    <strong>Frédéric BRUYELLE</strong>
+                    <a href="tel:0475759191" data-role="button" rel="external" target="_blank" data-icon="phone">Téléphone</a>
+                    <a href="mailto:frederic.bruyelle@btp0726.fr" data-role="button" rel="external" data-icon="email">E-mail : frederic.bruyelle@btp0726.fr</a>
+                
+                    <h2>Prévention et Sécurité</h2>
+                    <img src="images/equipe/M.Lombard.jpg" class="image-equipe"/><br>
+                    <strong>Martine LOMBARD</strong>
+                    <a href="tel:0475759191" data-role="button" rel="external" target="_blank" data-icon="phone">Téléphone</a>
+                    <a href="mailto:martine.lombard@btp0726.fr" data-role="button" rel="external" data-icon="email">E-mail : martine.lombard@btp0726.fr</a>
+
+                    <h2>Social</h2>
+                    <img src="images/equipe/DSC00083.JPG" class="image-equipe"/><br>
+                    <strong>Marie VEZIRIAN</strong>
+                    <a href="tel:0475759191" data-role="button" rel="external" target="_blank" data-icon="phone">Téléphone</a>
+                    <a href="mailto:marie.vezirian@btp0726.fr" data-role="button" rel="external" data-icon="email">E-mail : marie.vezirian@btp0726.fr</a>
+
+                    <br><HR>
+                    <h1 style="color:#24378d">Juridique Economique technique Environnement</h1>
+                    <HR>
+
+                    <h2>Responsable Juridique</h2>
+                    <img src="images/equipe/S.SAUSSAC.JPG" class="image-equipe"/><br>
+                    <strong>Serge SAUSSAC</strong>
+                    <a href="tel:0475759191" data-role="button" rel="external" target="_blank" data-icon="phone">Téléphone</a>
+                    <a href="mailto:serge.saussac@btp0726.fr" data-role="button" rel="external" data-icon="email">E-mail : serge.saussac@btp0726.fr</a>
+
+
+                    <h2>Technique</h2>
+                    <img src="images/equipe/TA2.JPG" class="image-equipe"/><br>
+                    <strong>Tony ASTIER</strong>
+                    <a href="tel:0475759191" data-role="button" rel="external" target="_blank" data-icon="phone">Téléphone</a>
+                    <a href="mailto:tony.astier@btp0726.fr" data-role="button" rel="external" data-icon="email">E-mail : tony.astier@btp0726.fr</a>
+
+
+                    <h2>Economique Juridique</h2>
+                    <img src="images/equipe/OB.JPG" class="image-equipe"/><br>
+                    <strong>Olivia BANC</strong>
+                    <a href="tel:0475759191" data-role="button" rel="external" target="_blank" data-icon="phone">Téléphone</a>
+                    <a href="mailto:olivia.banc@btp0726.fr" data-role="button" rel="external" data-icon="email">E-mail : olivia.banc@btp0726.fr</a>
+
+                    <br><HR>
+                    <h1 style="color:#24378d">Formation Développement Animation</h1>
+                    <HR>
+                    
+                    <h2>Responsable</h2>
+                    <img src="images/equipe/RM.JPG" class="image-equipe"/><br>
+                    <strong>Rachel MESNIL</strong>
+                    <a href="tel:0475759191" data-role="button" rel="external" target="_blank" data-icon="phone">Téléphone</a>
+                    <a href="mailto:rachel.mesnil@btp0726.fr" data-role="button" rel="external" data-icon="email">E-mail : rachel.mesnil@btp0726.fr</a>
+
+
+                    <h2>Développement Animation</h2>
+                    <img src="images/equipe/TA2.JPG" class="image-equipe"/><br>
+                    <strong>Tony ASTIER</strong>
+                    <a href="tel:0475759191" data-role="button" rel="external" target="_blank" data-icon="phone">Téléphone</a>
+                    <a href="mailto:tony.astier@btp0726.fr" data-role="button" rel="external" data-icon="email">E-mail : tony.astier@btp0726.fr</a>
+
+
+                    <h2>Formation</h2>
+                    <img src="images/equipe/DSC00082.JPG" class="image-equipe"/><br>
+                    <strong>Valérie JOUAN</strong>
+                    <a href="tel:0475759191" data-role="button" rel="external" target="_blank" data-icon="phone">Téléphone</a>
+                    <a href="mailto:valerie.jouan@btp0726.fr" data-role="button" rel="external" data-icon="email">E-mail : valerie.jouan@btp0726.fr</a>         
+
+                    <br><HR>
+                    <h1 style="color:#24378d">Accueil – Reprographie</h1>
+                    <HR>       
+
+
+                    <h2>Accueil standard</h2>
+                    <img src="images/equipe/K-EL-HADAD.JPG" class="image-equipe"/><br>
+                    <strong>Kadija EL HADAD</strong><br><br>
+                    <img src="images/equipe/MA.JPG" class="image-equipe"/><br>
+                    <strong>Maryse ANDRIANIRINA</strong>
+                    <a href="tel:0475759191" data-role="button" rel="external" target="_blank" data-icon="phone">Téléphone</a>
+                    <a href="mailto:khadija.elhadad@btp0726.fr" data-role="button" rel="external" data-icon="email">E-mail : khadija.elhadad@btp0726.fr</a>     
+
+                    <h2>Reprographie Gestion des salles</h2>
+                    <img src="images/equipe/R.FAURE.JPG" class="image-equipe"/><br>
+                    <strong>Roland FAURE</strong>
+                    <a href="tel:0475759191" data-role="button" rel="external" target="_blank" data-icon="phone">Téléphone</a>
+                    <a href="mailto:roland.faure@btp0726.fr" data-role="button" rel="external" data-icon="email">E-mail : roland.faure@btp0726.fr</a>      
+
+                    <br>               
+                </div>
+        </div>
+    </div>
+</body>
+</html>
+

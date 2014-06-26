@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "GY86BP8AU6.lesmercenaires.btp26"	
+	version 	= "1.1">
+
+	<name>BTP Drôme et Ardèche</name>
+
+	<description>Application BTP Drôme et Ardèche</description>
+
+	<author href="http://www.lesmercenaires.com"
+		email="fabien@lesmercenaires.com">
+		Fabien Gravier
+	</author>
+
+
+	<gap:platform name="ios" />
+	<gap:platform name="android" minVersion="2.1"/>
+
+	<preference name="android-minSdkVersion" value="5" />
+	<preference name="stay-in-webview" value="false" />
+
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	<feature name="http://api.phonegap.com/1.0/file"/>
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	
+	<!--<gap:splash src="images/splash.png" width="533" height="800"/>
+	<gap:splash src="images/splash_small.png" width="320" height="480" />
+	<gap:splash src="images/splash-retina.png" width="640" height="960"/>-->
+	
+	<icon src="icon.png" />
+
+	<!-- iOS 7.0+ -->
+	<!-- iPhone / iPod Touch  -->
+	<icon src="images/icons/ios7/icon-60.png" gap:platform="ios" width="60" height="60" />
+	<icon src="images/icons/ios7/icon-60@2x.png" gap:platform="ios" width="120" height="120" />
+
+	<!-- iPad -->
+	<icon src="images/icons/ios7/icon-76.png" gap:platform="ios" width="76" height="76" />
+	<icon src="images/icons/ios7/icon-76@2x.png" gap:platform="ios" width="152" height="152" />
+
+	<!-- Settings Icon -->
+	<icon src="images/icons/ios7/icon-small.png" gap:platform="ios" width="29" height="29" />
+	<icon src="images/icons/ios7/icon-small@2x.png" gap:platform="ios" width="58" height="58" />
+
+	<!-- Spotlight Icon -->
+	<icon src="images/icons/ios7/icon-40.png" gap:platform="ios" width="40" height="40" />
+	<icon src="images/icons/ios7/icon-40@2x.png" gap:platform="ios" width="80" height="80" />
+
+	<!-- iOS 6.1 -->
+	<!-- iPhone / iPod Touch -->
+	<icon src="images/icons/ios6/icon.png" gap:platform="ios" width="57" height="57" />
+	<icon src="images/icons/ios6/icon@2x.png" gap:platform="ios" width="114" height="114" />
+
+	<!-- iPad -->
+	<icon src="images/icons/ios6/icon-72.png" gap:platform="ios" width="72" height="72" />
+	<icon src="images/icons/ios6/icon-72@2x.png" gap:platform="ios" width="144" height="144" />
+
+	<!-- iPhone Spotlight and Settings Icon -->
+	<icon src="images/icons/ios6/icon-small.png" gap:platform="ios" width="29" height="29" />
+	<icon src="images/icons/ios6/icon-small@2x.png" gap:platform="ios" width="58" height="58" />
+
+	<!-- iPad Spotlight and Settings Icon -->
+	<icon src="images/icons/ios6/icon-50.png" gap:platform="ios" width="50" height="50" />
+	<icon src="images/icons/ios6/icon-50@2x.png" gap:platform="ios" width="100" height="100" />
+	
+	<icon src="images/icons/android/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+	<icon src="images/icons/android/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+	<icon src="images/icons/android/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+	<icon src="images/icons/android/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<icon src="images/icons/android/xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
+	<icon src="images/icons/android/fr-xxhdpi.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
+		
+	<!--
+	36px (ldpi)
+	48px (mdpi)
+	72px (hdpi)
+	96px (xhdpi)
+	144px (xxhdpi)
+	-->
+	
+	<gap:splash src="splash.png" />
+
+
+	<!-- iPhone and iPod touch -->
+	<gap:splash src="images/splash/ios/Default.png" gap:platform="ios" width="320" height="480" />
+	<gap:splash src="images/splash/ios/Default@2x.png" gap:platform="ios" width="640" height="960" />
+
+	<!-- iPhone 5 / iPod Touch (5th Generation) -->
+	<gap:splash src="images/splash/ios/Default-568h@2x.png" gap:platform="ios" width="640" height="1136" />
+
+	<!-- iPad -->
+	<gap:splash src="images/splash/ios/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
+	<gap:splash src="images/splash/ios/Default-Landscape.png" gap:platform="ios" width="1024" height="768" />
+
+	<!-- Retina iPad -->
+	<gap:splash src="images/splash/ios/Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2048" />
+	
+	<gap:splash src="images/splash/android/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+	<gap:splash src="images/splash/android/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+	<gap:splash src="images/splash/android/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+	<gap:splash src="images/splash/android/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+
+	
+	<!--	
+	ldpi: small screens are at least 426dp x 320dp
+	mdpi: normal screens are at least 470dp x 320dp
+	hdpi: large screens are at least 640dp x 480dp
+	xlarge screens are at least 960dp x 720dp
+	-->
+	<preference name="detect-data-types" value="false" />
+	
+	
+		
+	<access origin="*" />
+	<preference name="disable-cursor" value="true" />
+	<preference name="target-device" value="universal" />
+
+	<gap:plugin name="org.apache.cordova.inappbrowser" version="0.2.4" />
+	
+
+	<!-- sample preference specification -->
+	<!-- <preference name="autorotate" value="false" readonly="true"/> -->
+</widget>
+

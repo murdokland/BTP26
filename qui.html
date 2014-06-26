@@ -1,0 +1,166 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<script src="js/config.js" type="text/javascript"></script>
+<title></title>
+<script>document.title = title</script>
+<link href="js/jquery.mobile-1.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script>
+$( document ).bind( "mobileinit", function() {
+    // Make your jQuery Mobile framework configuration changes here!
+    $.mobile.allowCrossDomainPages = true;
+});
+
+$(document).ready(function(){
+    // make sure we only add the point the back buttons
+   /* var backButton = $('a[data-theme="app-ios"]').filter('[data-rel="back"]');
+    backButton.find('.ui-icon').remove();
+    backButton.append('<div class="ios-tip"><span>&nbsp;</span></div>');*/
+});
+</script>
+</head>
+<body>
+    <div data-role="page" id="page">
+    	<div data-role="header" data-id="head1" data-position="fixed" data-theme="c">
+        		<h3>Qui sommes-nous ?</h3>
+                <a href="#" data-role="button" data-transition="fade" data-rel="back" data-icon="arrow-l"  data-theme="b" >Accueil</a>
+        </div>
+            <div data-role="content">	
+                <div>
+                 <!-- <h2 style="padding-left:5px">Qui sommes-nous ?</h2> -->
+                  <p style="padding-left:5px; font-size:16px; text-align: justify; color:#24378d">
+                  <strong>La Fédération du BTP Drôme Ardèche</strong> constitue un réseau d’artisans et entreprises de toutes tailles et de tous métiers de la construction employant plus de la moitié des 20 000 salariés du BTP en Drôme Ardèche.
+                  </p>
+                  
+                  <!-- <p style="padding-left:5px; font-size:16px; text-align: justify;">
+                      La Fédération BTP de l’Isère en quelques chiffres …<br><br>
+                        630 entreprises adhérentes <br><br>
+                        
+                        •	réalisent les 2/3 du chiffre d’affaire des travaux en Isère<br>
+                        •	emploient plus de 15 000 salariés<br>
+                        •	72 % des adhérents ont moins de 20 salariés<br>
+                  </p> -->
+<!--                   <br>
+                  <img src="images/adherents.jpg" border="0" width="100%">
+                  <br><br> -->
+                   <h2 style="padding-left:5px; color:#96bf0d; text-align:center">
+                  		<strong>Fédération du BTP Drôme Ardèche : <br>être proche de vous, notre cœur de métier </strong>
+                   </h2>
+                    
+ 					<p style="padding-left:5px; font-size:16px;text-align: justify; ">
+                        Les artisans et entrepreneurs de la Fédération se répartissent parmi 9 sections professionnelles couvrant tous les corps de métiers et 11 chambres territoriales maillant l’intégralité de la Drôme et de l’Ardèche.<br><br> 
+
+                    <strong style="color:#24378d">Les sections professionnelles :</strong><br>
+                    - Travaux Publics<br>
+                    - Maçonnerie Gros-Œuvre<br>
+                    - Menuiserie<br>
+                    - Plâtrerie Peinture Vitrerie<br>
+                    - Climatique Sanitaire Zinguerie<br>
+                    - Métallerie<br>
+                    - Électricité<br>
+                    - Étanchéité<br>
+                    - Carrelages Revêtements de sols<br><br>
+
+                    <strong style="color:#24378d">Les membres associés : </strong><br>
+                    -   Constructeurs immobilier<br><br>
+
+                    <strong style="color:#24378d">Les chambres territoriales :</strong><br>
+                    - Tain Tournon<br>
+                    - Romans<br>
+                    - Valence<br>
+                    - Crest<br>
+                    - Die<br>
+                    - Nyons<br>
+                    - Montélimar<br>
+                    - Aubenas<br>
+                    - La Voulte<br>
+                    - Cheylard<br>
+                    - Annonay<br>                        
+                      </p><br>             
+                     <p style="padding-left:5px; font-size:16px;text-align: justify; ">                     
+                      Des artisans et entreprises de toutes tailles pour répondre à chacun de vos besoins :<br>
+                        -   25% des adhérents emploient moins de 5 salariés<br>
+                        -   Plus de 50% emploient moins de 10 salariés<br>
+                        -   75% emploient moins de 20 salariés<br>
+                        -   18% emploient entre 20 et 50 salariés<br>
+                        -   Un peu plus de 5% emploient plus de 50 salariés<br><br>
+
+                        La diversité des artisans et entrepreneurs adhérents constitue un réseau unique en Drôme Ardèche. Cette diversité permet :<br>
+                        -   aux artisans et entrepreneurs de développer contacts, échanges et réflexion pour faire évoluer la profession<br>
+                        -   aux clients et maîtres d’ouvrage de trouver le bon professionnel correspondant à ses besoins<br>
+                      </p>
+
+				  <h2 style="padding-left:5px; color:#3e3e3e ; font-size:16px">Que faisons-nous ?</h2>
+
+                    <!-- <h2 style="padding-left:5px; color:#000000"> BTP ISERE : une Fédération aux services des entrepreneurs</h2> -->
+                    <h2 style="padding-left:5px; color:#96bf0d; text-transform:uppercase">Informer / Conseiller / accompagner : </h2>
+                    <p style="padding-left:5px; font-size:16px; text-align: justify;">
+                    
+                    Les services de la Fédération vous informent, vous conseillent et vous accompagnent au quotidien dans tous les domaines intéressant les artisans et entreprises du BTP :<br>
+                    -   Social<br>
+                    -   Juridique- marchés<br>
+                    -   Fiscal<br>
+                    -   Hygiène et sécurité<br>
+                    -   Formation<br>
+                    -   Environnement<br>
+                    -   Technique<br><br>
+
+                    Chaque semaine une newsletter vous permet de prendre connaissance des modifications législatives ou réglementaires. <br>
+
+                    Des experts de proximité sont là au quotidien pour vous conseiller, vous épauler, vous accompagner.<br>
+
+                    Des réunions thématiques permettent de nourrir les échanges entre professionnels ou de bénéficier de l’intervention d’experts sur les sujets d’actualité. <br>
+
+                    </p>
+                    
+                    
+                    <h2 style="padding-left:5px; color:#96bf0d; text-transform:uppercase">Défendre :</h2>
+                     <p style="padding-left:5px; font-size:16px; text-align: justify;">
+                    Grâce à sa structuration et à son poids politique et économique, la Fédération assure au quotidien la promotion et la défense des artisans et entreprises du BTP.
+
+                    Lutte contre les prix anormalement bas et le dumping social, défense d’une fiscalité adaptée à l’investissement et à l’entreprenariat, défense de l’investissement pour les projets structurants du territoire, etc.…, la Fédération se fait le porte-voix des artisans et entrepreneurs dans les débats locaux et nationaux.
+
+                    </p>
+                    <h2 style="padding-left:5px; color:#96bf0d; text-transform:uppercase">Représenter :</h2>
+                    <p style="padding-left:5px; font-size:16px; text-align: justify;">
+                    Partout où les intérêts de la profession sont en jeu (Caisses Congés, OPCA construction, chambres consulaires, Qualibat, etc.…) plus de 100 mandataires, détenant près de 200 mandats, représentent et défendent les intérêts des artisans et entrepreneurs du BTP.
+
+                    </p>
+                    <h2 style="padding-left:5px; color:#96bf0d; text-transform:uppercase">Promouvoir :</h2>
+                    <p style="padding-left:5px; font-size:16px; text-align: justify;">
+                    Passion des métiers, promotion de l’artisanat et de l’entreprenariat, promotion des métiers auprès des jeunes, la Fédération agit au quotidien pour valoriser nos métiers et nos professions.
+
+                    </p>
+                    <br>
+                    <p style="padding-left:5px; font-size:18px; color:#24378d">
+                    <strong>Une Fédération dirigée par des mandataires entrepreneurs et artisans élus par leurs pairs :</strong><br><br>
+                    </p>
+                    <p style="padding-left:5px; font-size:16px;">
+                    Président : Gérard PAYEN<br>
+                    Vice-président TP : Stéphane BELLAMY<br>
+                    Vice-présidente Ardèche : Cécile GRUAT<br>
+                    Vice-président Drôme : Éric SAUTEL<br>
+                    Secrétaire : Michel COCHET<br>
+                    Trésorier : Frédéric COMBIER
+                    </p>
+
+
+
+                <br><br>
+                Crédits photos: <script>document.write(credit)</script><br>
+                Conception/Réalisation: <br>
+                <a href="#" onclick="window.open('http://cliceclic.fr/', '_system', 'location=yes');" data-role="button" rel="external" target="_blank">Cliceclic</a>
+                <span style="font-size:11px"><i>Conformément à la loi Informatique et Libertés du 6 janvier 1978, chaque personne pour laquelle des données nominatives figurent dans le site dispose d'un droit d'accès, de modification, de rectification et de suppression des données qui la concernent auprès de <script>document.write(credit)</script>.</i></span>
+                
+                </p>
+                </div>	
+        </div>
+    </div>
+</body>
+</html>
+
